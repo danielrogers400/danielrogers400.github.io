@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+h1 {
+	font-family:"Segoe UI Light";
+}
+
+body {
+	margin: 0; 
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 1200px;
+	height: 500px;
+}
+
+/*Used for sub headings*/
+.TableFontMain {
+	font-family: "Segoe UI Light";
+	font-size: 30px;
+	color: #1C1A1B;
+}
+
+/*Used for the main page headings*/
+.TableFontHead {
+	font-family: "Segoe UI Light";
+	font-weight:bold;
+	font-size: 34px;
+}
+
+/*Used for description text*/
+.TableFontSmall {
+	font-family: "Segoe UI Light";
+	font-size: 16px;
+	color: #585858;
+	text-align: left;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Portfolio of Daniel Rogers &bull; Games Development</title>
+<link href="MyStyleSheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head><a id="top"></a>
+<body bgcolor="#EEEEEE"><div class="container">
+<table width="1200" height="817" border="0">
+  <tr>
+    <td height="82" colspan="3" align="center" valign="top" class="TableFontMain"><p><a href="index.html" title="Home" target="_top" onclick="MM_nbGroup('down','group1','ButtonHome','',1)" onmouseover="MM_nbGroup('over','ButtonHome','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_Home.jpg" alt="Home Button" name="ButtonHome" border="0" id="Button_Home" onload="" /></a><a href="CollegeWork.html" title="College Work" target="_top" onclick="MM_nbGroup('down','group1','ButtonCollegeselected','',1)" onmouseover="MM_nbGroup('over','ButtonCollegeselected','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_College_selected.jpg" alt="College Work Button" name="ButtonCollegeselected" border="0" id="ButtonMedia" onload="" /></a><a href="PersonalWork.html" title="Personal Work" target="_top" onclick="MM_nbGroup('down','group1','ButtonPersonal','',1)" onmouseover="MM_nbGroup('over','ButtonPersonal','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_Personal.jpg" alt="Personal Work Button" name="ButtonPersonal" border="0" id="ButtonGames" onload="" /></a><a href="Games.html" title="Games Devlopment"><br />
+      <img src="img/Button_Games.jpg" width="130" height="50" alt="Games Development Button" border="0" /></a><a href="Software.html" title="Software  Devlopment [You are here]"><img src="img/Button_Software_selected.jpg" width="130" height="50" alt="Software Development Button" border="0" /></a></p></td>
+    </tr>
+  <tr>
+    <td width="112" rowspan="3">&nbsp;</td>
+    <td height="313" colspan="2" align="center" valign="top"><table width="961" height="320" border="0" align="left">
+      <tr>
+        <td width="423" height="340" align="left" valign="top"><p class="TableFontHead">Software Development:<br/>
+          Year 1</p>
+          <p class="TableFontSmall">During my first year of Software Development I covered a wide range of subjects and concepts. I began with a simple &quot;Hello World&quot; program in Java, Python and HTML and  advanced to a stage where I could utilise methods, arrays and simple objects. </p>
+          <p class="TableFontSmall">Shown below are some source code examples in different languages.</p></td>
+        <td width="531" align="center"><img src="img/Software Image.jpg" alt="" width="411" height="305" /></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td width="534" height="190" align="right" valign="middle" class="TableFontSmall"><p><strong>Tic Tac Toe (Java)</strong> - a simple game of Tic Tac Toe that can be played against a human opponent or a computer AI which I wrote. </p>
+      <p>Play by extracting to a folder and running TicTacToe.java in a Java IDE.</p>
+      <p><a href="codeExamples/A00184128 Tic Tac Toe.zip">Download source archive.</a></p></td>
+    <td height="190" align="left" valign="middle" class="TableFontSmall"><p class="TableFontSmall"><strong>Decrypter (Python) </strong>- this program allows the user to analyse and decrypt  encrypted plaintext messages</p>
+      <p class="TableFontSmall">Extract the archive, then view the readme for further instructions. </p>
+  <p class="TableFontSmall"><a href="codeExamples/PythonSamples.zip">Download source archive (includes readme)</a></p></td>
+  </tr>
+  <tr>
+    <td width="534" height="190" align="right" valign="bottom" class="TableFontMain"><a href="Games.html"><a href="Games.html"><a href="Games.html"></a><a href="Software.html" title="Return to Software Development main page"><img src="img/Button_Software_Return.jpg" alt="Return To Software Main Page" width="130" height="50" border="0" /></a><a href="Games.html"></a></td>
+    <td width="535" height="190" align="left" valign="bottom" class="TableFontMain"><a href="#top"><a href="#top"></a><a href="#top" title="Return to top of page"><img src="img/Button_Back_To_Top.jpg" alt="Return to top" width="130" height="50" border="0" class="TableFontMain" /></a></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Portfolio of Daniel Rogers &bull; Games Development</title>
+<link href="MyStyleSheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head><a id="top"></a>
+<body bgcolor="#EEEEEE"><div class="container">
+<table width="1200" height="566" border="0">
+  <tr>
+    <td height="102" colspan="3" align="center" valign="top" class="TableFontMain"><p><a href="index.html" title="Home" target="_top" onclick="MM_nbGroup('down','group1','ButtonHome','',1)" onmouseover="MM_nbGroup('over','ButtonHome','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_Home.jpg" alt="Home Button" name="ButtonHome" border="0" id="Button_Home" onload="" /></a><a href="CollegeWork.html" title="College Work" target="_top" onclick="MM_nbGroup('down','group1','ButtonCollegeselected','',1)" onmouseover="MM_nbGroup('over','ButtonCollegeselected','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_College_selected.jpg" alt="College Work Button" name="ButtonCollegeselected" border="0" id="ButtonMedia" onload="" /></a><a href="PersonalWork.html" title="Personal Work" target="_top" onclick="MM_nbGroup('down','group1','ButtonPersonal','',1)" onmouseover="MM_nbGroup('over','ButtonPersonal','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_Personal.jpg" alt="Personal Work Button" name="ButtonGames" border="0" id="ButtonGames" onload="" /><br />
+    </a><a href="Games.html" title="Games [You are here]"><img src="img/Button_Games_Selected.jpg" width="130" height="50" alt="Games Button" border="0" /></a><a href="Software.html" title="Software Devlopment"><img src="img/Button_Software.jpg" width="130" height="50" alt="Software Development Button" border="0" /></a></p></td>
+    </tr>
+  <tr>
+    <td width="112" rowspan="4">&nbsp;</td>
+    <td height="313" colspan="2" align="center" valign="top"><table width="961" height="259" border="0" align="left">
+      <tr>
+        <td width="423" height="340" align="left" valign="top"><p class="TableFontHead">Games Development:<br/>
+        Year 1</p>
+          <p class="TableFontSmall">First year games development was spent learning basic game design concepts.  We used <a href="http://www.yoyogames.com/gamemaker/windows">GameMaker</a> to implement these concepts and see them in action - from basic Pong-like shooters, to more complex action games. Shown below is a sample of these games - starting with one of the most basic, and finishing with one of the more complex games.</p></td>
+        <td width="531" align="center"><img src="img/Cube.jpg" alt="" width="332" height="305" /></td>
+        </tr>
+    </table></td>
+    </tr>
+  <tr>
+    <td height="128" colspan="2" align="center" valign="middle"><img src="img/Gm8.jpeg" width="506" height="210" alt="GameMaker logo" /></td>
+    </tr>
+  <tr>
+    <td height="15" colspan="2" valign="top" class="TableFontSmall"><p align="left">&quot;Evil Clutches&quot;  was one of the first games I developed as part of the Games </p>
+<p align="left">Development Module. It is best described as a &quot;simple shooter&quot; type game.</p>
+<p align="left"><strong>Click on the image below to try out the game. </strong></p>
+      <p align="left"><a href="games/Evil1.exe" title="Evil Clutches"><img src="img/EvilClutches.jpg" alt="Evil Clutches Link" width="460" height="420" /></a></p> 
+      <p align="center">&nbsp;</p>
+      <p align="right">&quot;Galactic Mail&quot;  was one of the next games I developed as part of the Games Development Module. </p>
+      <p align="right">It is a slightly more complex action game. From the description:</p>
+      <p align="right">&nbsp; <em>&quot;You play an intergalactic mail  carrier who must deliver mail to a number of inhabited </em></p>
+      <p align="right"><em> moons. </em><em>He  must safely steer a course from moon to moon while avoiding dangerous </em></p>
+      <p align="right"><em>asteroids.</em><em> The mail carrier is paid for each  delivery he makes, but pay is deducted for time </em></p>
+      <p align="right"><em>spent </em><em>hanging around  on moons. </em><em>This adds pressure to the difficult task of orienting</em><em> his </em></p>
+      <p align="right"><em>rickety,  old rocket, which  he cannot steer very well in space.&quot;</em></p>
+      <p align="right">&nbsp; </p>
+      <p align="right"><strong>Click on the image below to try out the game. </strong></p>
+      <p align="right"><a href="games/Galactic Mail.exe" title="Galactic Mail"><img src="img/GalacticMail.jpg" alt="Galactic Mail Link" width="460" height="420" /></a></p>      <p align="center">&nbsp; </p>
+      <p>Following on from &quot;Galactic Mail&quot;, I developed &quot;Lazarus&quot;.</p>
+      <p><em>Lazarus has been abducted by the  Blob Mob, who are intent on bringing this </em></p>
+      <p><em>harmless creature to a sticky </em><em>end. They have imprisoned him at the Blobfather's</em></p>
+      <p><em> factory, where they are  trying to squish him under </em><em>a pile of heavy boxes. However, </em></p>
+      <p><em>they have not  accounted for Lazarus' quick thinking, as the boxes can be used to</em></p>
+      <p><em> build a  stairway up to the power button that halts the machinery. Do you have the  </em></p>
+      <p><em>reactions needed to help </em><em>Lazarus build a way up, or will the evil mob claim one  more </em></p>
+      <p><em>innocent victim? </em></p>
+      <p><strong>Click on the image below to try out the game. </strong></p>
+      <p><a href="games/lazarus.exe" title="Lazarus"><img src="img/Lazarus.jpg" alt="Lazarus_Link" width="460" height="420" /></a></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p align="right">&quot;Wingman Sam&quot; was a more complex, two player game I also developed.</p>
+      <p align="right">&nbsp;<em> &ldquo;At  the end of the Second World War you and your wingman are part of an </em><em>allied  squadron </em></p>
+      <p align="right"><em>with secret orders to intercept the dangerous general von </em><em>Strauss.  Unfortunately your mission </em></p>
+      <p align="right"><em>turns out to be less secret than you </em><em>thought and you  are soon engaged by wave after wave of </em></p>
+      <p align="right"><em>enemy fighters. You'll need to work  together to survive the onslaught and destroy the general's</em></p>
+      <p align="right"><em>plane, </em><em>so the  mission will be aborted if either of your planes are destroyed&quot; . </em></p>
+      <p align="right">&nbsp;</p>
+      <p align="right"><em>One  player will control their plane with the arrow keys and fire bullets with the return key. The other </em></p>
+      <p align="right"><em>player </em><em>will control their plane with A, S, D, W and fire  bullets with the space key. Enemy planes will </em></p>
+      <p align="right"><em>appear </em><em>from the front, </em><em>the sides,  and behind. Some will just try to ram you while </em><em>others will shoot at </em></p>
+      <p align="right"><em>you. Both  of your planes </em><em>can only</em><em>take</em><em> a limited amount of damage before they are  destroyed.</em></p>
+      <p align="right"><strong>Click on the image below to try out the game. </strong><em>&rdquo;</em></p>
+      <p align="right"><a href="games/WingmanSam.exe" title="Wingman Sam">S<img src="img/WingManSam.jpg" alt="WingmanSam Link" width="460" height="420" /></a></p></td>
+    </tr>
+  
+  <tr>
+    <td width="468" height="190" align="right" valign="bottom" class="TableFontMain"><a href="Games.html" title="Return to Games Development main page"><img src="img/Button_Games_Return.jpg" alt="Return To Games Main Page" width="130" height="50" border="0" /></a></td>
+    <td width="551" height="190" align="left" valign="bottom" class="TableFontMain"><a href="#top" title="Return to top of page"><img src="img/Button_Back_To_Top.jpg" alt="Return to top" width="130" height="50" border="0" class="TableFontMain" /></a></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

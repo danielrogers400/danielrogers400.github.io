@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Portfolio of Daniel Rogers &bull; Software</title>
+<link href="MyStyleSheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+<body bgcolor="#EEEEEE"><div class="container">
+<table width="1200" height="1639" border="0">
+  <tr>
+    <td height="52" colspan="4" align="center" valign="top" class="TableFontMain"><p><a href="index.html" title="Home" target="_top" onclick="MM_nbGroup('down','group1','ButtonHome','',1)" onmouseover="MM_nbGroup('over','ButtonHome','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_Home.jpg" alt="Home Button" name="ButtonHome" border="0" id="Button_Home" onload="" /></a><a href="CollegeWork.html" title="College Work" target="_top" onclick="MM_nbGroup('down','group1','ButtonCollege','',1)" onmouseover="MM_nbGroup('over','ButtonCollege','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_College.jpg" alt="College Work Button" name="ButtonCollege" border="0" id="ButtonMedia" onload="" /></a><a href="PersonalWork.html" title="Personal Work"s="s" target="_top" onclick="MM_nbGroup('down','group1','ButtonPersonal','',1)" onmouseover="MM_nbGroup('over','ButtonPersonal','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_Personal_selected.jpg" alt="Personal Work Button" name="ButtonPersonal" border="0" id="ButtonRequirements" onload="" /></a></p></td>
+    </tr>
+  <tr>
+    <td width="112" rowspan="7">&nbsp;</td>
+    <td height="380" colspan="3" align="center" valign="top"><table width="961" height="390" border="0" align="left">
+      <tr>
+        <td height="153" align="left" valign="top"><p class="TableFontHead">WALI</p>
+          <p class="TableFontSmall">&nbsp;</p></td>
+        <td rowspan="2" align="center"><img src="img/Collage.jpg" width="500" height="400" alt="Collage" /></td>
+        </tr>
+      <tr>
+        <td height="229" align="left" valign="top"><span class="TableFontSmall">WALI, standing for Warscape Added Lua Interface, is a modding project for the games Empire: Total War and Napoleon: Total War (<a href="http://www.totalwar.com/en_us/">Total War website</a>). WALI edits runtime memory to expand the scripting functionality of these games.</span></td>
+      </tr>
+    </table></td>
+    </tr>
+  <tr>
+    <td width="517" valign="top"><span class="TableFontMain">Background</span></td>
+    <td width="18" valign="top">&nbsp;</td>
+    <td width="535" height="43" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" class="TableFontSmall">The games Empire: Total War and Napoleon: Total War utilise Lua for game scripting in their Warscape engine. The entire UI is written in Lua, as well as all in game scripted events. However, the Lua API for these games was difficult to use and from a modders point of view was very restricted (a lot of information retrieval functions, yet very few that could modify data). To improve upon this another forum member and I began working on a memory hook project. Due to the previously mentioned difficulties in modding and scripting there are very few modders who make use of game scripting. As such this project was mostly academical - our main aim was to see how functional a memory hook for this game engine would be. We expected its user base to very small, if at all extended beyond us. Despite this, the tool is fully documented and relatively simple to use. Our plan was to use the same code (which is very adaptable) to make a new tool for the game Total War: Rome 2, which at the time was still in development, although was expected to have a much laregr modding community. The planned update was put on hiatus due to college-related time commitments.</td>
+    <td align="center" valign="top">&nbsp;</td>
+    <td height="236" align="center" valign="top"><img src="img/TWCollage.jpg" width="423" height="296" alt="TW Collage" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td height="48" valign="top"><span class="TableFontMain">Details</span></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="img/wali.jpg" width="301" height="400" alt="WALI" /></td>
+    <td valign="top" class="TableFontSmall">&nbsp;</td>
+    <td height="95" valign="top" class="TableFontSmall"><p class="TableFontSmall">WALI is divided into two interacting parts - an independent C# engine, and a Lua module loaded by the game.<br />
+      The C# engine was written by Mitchell Heastie, and the Lua module by me. The C# engine reads commands sent by Lua, edits runtime memory and then reports back to Lua. The Lua module sends commands to C# and provides a library of commands which game scripts can access. While the Lua and C# side were written individually, we both maintain code from each others part of the project where necessary.</p>
+      <p class="TableFontSmall">WALI allows users to define their own commands - if a user knows the memory location of a value they can define a command and use it straight away in WALI.</p>
+      <p class="TableFontSmall">The C# code may seem like the workhorse, but the Lua side is just as complex - to see for yourself have a look at the download section below.</p></td>
+  </tr>
+  <tr>
+    <td valign="top" class="TableFontMain">Difficulties designing this project</td>
+    <td valign="top">&nbsp;</td>
+    <td height="43" valign="top"><span class="TableFontMain">Download</span></td>
+  </tr>
+  <tr>
+    <td valign="top" class="TableFontSmall"><p>This project was challenging to develop, and presented many interesting difficulties and problems which I hadn't previously encountered. <br />
+      The first issue was memory mapping. We had to identify locations in memory where values we wanted to change were located. I found this an interesting challenge - we had an idea of the memory structure of objects from looking at database entries (eg unit stats, which were loaded into memory from a database) and reading the output of information retrieval functions. I then used existing Lua API commands to retrieve object pointers, and from there compared the memory structure in a hex editor to expected values. Although this sounds technical, most of this was educated guesswork; we located a value in memory, changed it in a hex editor and looked to see if the corresponding value in game changed.</p>
+      <p>Another issue was getting the C# engine and Lua to communicate in a way that wouldn't interrupt game play. We achieved this by using a series of text files and carefully programming the IO functionality associated with these files so no crashes/hangs would occur. To see my input to this, have a look at the WALI.lua file (see the download section to the right).</p>
+      <p>We also done our best to make sure there are no &quot;silent errors&quot; in this program. If it encounters any unforeseen difficulties the user is informed and detailed logs are created.</p></td>
+    <td valign="top">&nbsp;</td>
+    <td height="105" valign="top"><span class="TableFontSmall">To get the latest code, take a look at our sourceforge page <a href="http://sourceforge.net/projects/wali-engine/">here</a>. We also have an SVN. To get a read only copy use the checkout URL: https://wali-engine.svn.sourceforge.net/svnroot/wali-engine</span></td>
+  </tr>
+  </table>
+</div>
+</body>
+</html>

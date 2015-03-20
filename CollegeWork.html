@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Portfolio of Daniel Rogers &bull; Digital Media</title>
+<link href="MyStyleSheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+<body bgcolor="#EEEEEE">
+<div class="container">
+<table width="1200" height="518" border="0">
+  <tr>
+    <td colspan="4" align="center" valign="top" class="TableFontMain"><p><a href="index.html" title="Home" target="_top" onclick="MM_nbGroup('down','group1','Button_Home','',1)" onmouseover="MM_nbGroup('over','Button_Home','','',1)" onmouseout="MM_nbGroup('out')"><img src="img/Button_Home.jpg" alt="Home Button" name="Button_Home" border="0" id="Button_Home" onload="" /></a><a href="CollegeWork.html" title="College Work [You are here]" target="_top" onClick="MM_nbGroup('down','group1','ButtonMedia','',1)" onMouseOver="MM_nbGroup('over','ButtonMedia','','',1)" onMouseOut="MM_nbGroup('out')"><img src="img/Button_College_selected.jpg" alt="College Work Button" name="ButtonMedia" border="0" onLoad="" /></a><a href="PersonalWork.html" title="Personal Work" target="_top" onClick="MM_nbGroup('down','group1','ButtonGames','',1)" onMouseOver="MM_nbGroup('over','ButtonGames','','',1)" onMouseOut="MM_nbGroup('out')"><img name="ButtonGames" src="img/Button_Personal.jpg" border="0" alt="Personal Work Button" onLoad="" /></a></p></td>
+    </tr>
+  <tr>
+    <td width="112" rowspan="2">&nbsp;</td>
+    <td height="33" colspan="3" align="center" valign="top"><table width="960" height="386" border="0" align="left">
+      <tr>
+        <td width="420" height="10" align="left" valign="top"><p class="TableFontHead">College Work</p>
+          <p class="TableFontSmall">&nbsp;</p></td>
+        <td width="531" rowspan="2" align="center" valign="middle"><img src="img/Test.jpg" width="313" height="305" alt="Test" /></td>
+        </tr>
+      <tr>
+        <td width="420" height="292" align="left" valign="middle"><p class="TableFontSmall">This section of my portfolio details work I have done as part of my college course. Some of it was individual work, some was as part of a group. Any group work is marked as such. </p>
+          <p class="TableFontSmall">The buttons below will guide you to sections containing my work. The Games section contains samples of games I have made, from simple games using GameMaker to advanced Unity and OpenGL demos. The Software section showcases programs I have wrote, primarily in Java and C++, as part of my Software Development module, as well as my final year project.</p>
+          <p class="TableFontSmall">As all of my work is grouped by year, you can see my progression through game design and programming over the years. </p></td>
+      </tr>
+    </table></td>
+    </tr>
+  <tr>
+    <td width="420" height="95" align="right" valign="top"><p><a href="Games.html" title="Games Development"><img src="img/Button_Games.jpg" width="130" height="50" alt="Games Button" border="0" /></a></p></td>
+    <td width="140"><p>&nbsp;</p>
+    <p>&nbsp;</p></td>
+    <td width="391" height="95" align="left" valign="top"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Software.html" title="Software Development"><img src="img/Button_Software.jpg" alt="Software Button" width="130" height="50" border="0 alt="Second Year Button" /></a><br/>
+    </p></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
